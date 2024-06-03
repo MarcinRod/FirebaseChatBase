@@ -29,8 +29,7 @@ class UsersFragment : Fragment(), RVItemClickListener{
     private lateinit var binding: FragmentUsersBinding
     // Declare an instance of the UsersAdapter class and set the click listener to this fragment
     private val usersAdapter = UsersAdapter(this)
-    // Create a list of users
-    private val users = ArrayList<User>()
+  
     // TODO: Placeholder
     override fun onCreateView(
         inflater: LayoutInflater,
