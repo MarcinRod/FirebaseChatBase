@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">FirebaseChat</string>
+    <string name="title_chats">Chats</string>
+    <string name="title_users">People</string>
+    <string name="register_str">Register</string>
+    <string name="login_str">Login</string>
+    <string name="password_hint">Password</string>
+    <string name="password_confirm_hint">Password (confirm)</string>
+    <string name="email_hint">Email</string>
+    <string name="invalid_username">Invalid username</string>
+    <string name="invalid_password">Invalid password</string>
+    <string name="password_mismatch">Password is not the same</string>
+    <string name="name">Room name</string>
+    <string name="create_str">Create</string>
+    <string name="cancel_str">Cancel</string>
+    <string name="missing_input">Missing input</string>
+    <string name="name_taken">Room name is used</string>
+    <string name="reply">Reply</string>
+    <string name="enter_str">Enter</string>
+    <string name="wrong_pass_msg">Wrong password</string>
+    <string name="try_again_msg">Try again</string>
+    <string name="message">Enter message</string>
+    <string name="last_seen_format">Last seen @ %1$s</string>
+    <string name="sign_in">Sign-in</string>
+    <string name="chat_with_format">Chat with: %1$s</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_login">
+
+    <fragment
+        android:id="@+id/navigation_chats"
+        android:name="com.mr.example.firebasechat.ui.home.ChatsFragment"
+        android:label="@string/title_chats"
+        tools:layout="@layout/fragment_chats" >
+        <action
+            android:id="@+id/action_navigation_chats_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_users"
+        android:name="com.mr.example.firebasechat.ui.users.UsersFragment"
+        android:label="@string/title_users"
+        tools:layout="@layout/fragment_users" >
+        <action
+            android:id="@+id/action_navigation_users_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.mr.example.firebasechat.ui.login.LoginRegisterFragment"
+        android:label="@string/sign_in"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_navigation_login_to_navigation_chats"
+            app:destination="@id/navigation_chats" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.mr.example.firebasechat.ui.chat.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="chat"
+            app:argType="com.mr.example.firebasechat.data.Chat" />
+    </fragment>
+
+
+</navigation>
