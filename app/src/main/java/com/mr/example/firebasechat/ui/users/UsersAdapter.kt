@@ -32,7 +32,9 @@ class UsersAdapter(private val clickListener: RVItemClickListener) :
             return oldItem.uid == newItem.uid && oldItem.lastSeen == newItem.lastSeen
         }
     }
-
+    override fun submitList(list: List<User>?) {
+        super.submitList(list?.let { ArrayList(it) })
+    }
     // Creates a ViewHolder for the RecyclerView
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         // Inflates the view from the ForumsScreenItemBinding and returns a new instance of ViewHolder
