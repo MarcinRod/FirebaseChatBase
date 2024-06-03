@@ -36,10 +36,6 @@ class ChatsAdapter(private val clickListener: RVItemClickListener) :
             return oldItem.chatName == newItem.chatName && oldItem.lastMessage == newItem.lastMessage && oldItem.recipientLastSeen == newItem.recipientLastSeen
         }
     }
-    // TODO: TO JEST ZBEDNE JUZ RACZEJ
-//    override fun submitList(list: List<Chat>?) {
-//        super.submitList(list?.let { ArrayList(it) })
-//    }
 
     // Creates a ViewHolder for the RecyclerView
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
